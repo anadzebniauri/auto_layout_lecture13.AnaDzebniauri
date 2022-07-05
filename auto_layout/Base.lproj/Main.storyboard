@@ -19,7 +19,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1-19705_download-new-iphone-x-wallpapers-from-ios-iphone" translatesAutoresizingMaskIntoConstraints="NO" id="TTb-FT-0WQ">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieg-cr-v2f">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieg-cr-v2f">
                                 <rect key="frame" x="80" y="220" width="254" height="32.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32.5" id="NBG-te-4Yy"/>
@@ -29,7 +29,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5e-pk-rBk">
-                                <rect key="frame" x="80" y="494" width="254" height="30"/>
+                                <rect key="frame" x="80" y="544" width="254" height="30"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="rKy-6b-KuU"/>
@@ -42,7 +42,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpe-Nk-Wmt">
-                                <rect key="frame" x="80" y="568" width="254" height="30"/>
+                                <rect key="frame" x="80" y="618" width="254" height="30"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -51,7 +51,7 @@
                                     <segue destination="74J-Ji-CXS" kind="show" id="JeX-pR-2JG"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHb-aj-Djj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHb-aj-Djj">
                                 <rect key="frame" x="80" y="114" width="254" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="H3o-od-ZCn"/>
@@ -60,12 +60,18 @@
                                 <color key="textColor" systemColor="systemPinkColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="3ee-WD-6Bh">
+                                <rect key="frame" x="80" y="313" width="254" height="99"/>
+                                <color key="tintColor" red="0.52225194819999998" green="0.38889630339999998" blue="0.86087566609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Ypn-6I-tjV"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="0.72954189777374268" blue="0.76837724447250366" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Xpe-Nk-Wmt" firstAttribute="trailing" secondItem="q5e-pk-rBk" secondAttribute="trailing" id="42c-jS-jqR"/>
-                            <constraint firstItem="q5e-pk-rBk" firstAttribute="top" secondItem="ieg-cr-v2f" secondAttribute="bottom" constant="241.5" id="4zs-Xi-sEl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q5e-pk-rBk" secondAttribute="trailing" constant="80" id="66u-Hr-j5R"/>
                             <constraint firstItem="Xpe-Nk-Wmt" firstAttribute="leading" secondItem="q5e-pk-rBk" secondAttribute="leading" id="Aya-LM-8eB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SHb-aj-Djj" secondAttribute="trailing" constant="80" id="BBp-Z2-QhL"/>
@@ -75,8 +81,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Xpe-Nk-Wmt" secondAttribute="bottom" constant="20" id="OH7-aO-JIq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ieg-cr-v2f" secondAttribute="trailing" constant="80" id="Plg-30-aBa"/>
                             <constraint firstItem="ieg-cr-v2f" firstAttribute="top" secondItem="SHb-aj-Djj" secondAttribute="bottom" constant="70" id="Sks-wr-qhJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3ee-WD-6Bh" secondAttribute="trailing" constant="80" id="Xg4-dr-MMm"/>
+                            <constraint firstItem="q5e-pk-rBk" firstAttribute="top" secondItem="3ee-WD-6Bh" secondAttribute="bottom" constant="131.5" id="Zov-bH-QIC"/>
                             <constraint firstItem="q5e-pk-rBk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="acy-BG-Kj9"/>
                             <constraint firstItem="Xpe-Nk-Wmt" firstAttribute="height" secondItem="q5e-pk-rBk" secondAttribute="height" id="arY-f3-73B"/>
+                            <constraint firstItem="3ee-WD-6Bh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="dkz-4d-lqf"/>
+                            <constraint firstItem="3ee-WD-6Bh" firstAttribute="top" secondItem="ieg-cr-v2f" secondAttribute="bottom" constant="60" id="gMt-FK-Vfb"/>
                             <constraint firstItem="ieg-cr-v2f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="gvz-eP-9Nn"/>
                             <constraint firstAttribute="bottom" secondItem="TTb-FT-0WQ" secondAttribute="bottom" id="h71-DC-gba"/>
                             <constraint firstItem="Xpe-Nk-Wmt" firstAttribute="top" secondItem="q5e-pk-rBk" secondAttribute="bottom" constant="44" id="orw-rz-8s5"/>
@@ -211,6 +221,7 @@
     <resources>
         <image name="1-19705_download-new-iphone-x-wallpapers-from-ios-iphone" width="904" height="1976"/>
         <image name="F9B6C0AA-A6E7-4ADB-AABD-E266D1CE8B23" width="500" height="375"/>
+        <image name="calendar.circle" catalog="system" width="128" height="121"/>
         <image name="pencil.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
